@@ -1,3 +1,10 @@
+<!--
+ * @Author: wangsc
+ * @Date: 2024-09-09 19:49:04
+ * @LastEditTime: 2024-09-09 19:52:02
+ * @LastEditors: wangsc
+ * @Description: 首页
+-->
 <template>
   <div
     class="bg-[url('assets/imgs/bg.jpg')] bg-cover bg-center h-screen text-white p-5 flex overflow-hidden"
@@ -44,6 +51,7 @@ import WordCloud from "./components/WordCloud.vue";
 import { ref } from "vue";
 import { getVisualization } from "./api/visualization.js";
 
+// 总数居
 const data = ref(null);
 const localData = async () => {
   data.value = await getVisualization();
