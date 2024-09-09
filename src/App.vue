@@ -1,7 +1,7 @@
 <!--
  * @Author: wangsc
  * @Date: 2024-09-09 19:49:04
- * @LastEditTime: 2024-09-09 20:13:01
+ * @LastEditTime: 2024-09-09 20:19:48
  * @LastEditors: wangsc
  * @Description: 首页
 -->
@@ -55,9 +55,6 @@ import { getVisualization } from "./api/visualization.js";
 const data = ref(null);
 const localData = async () => {
   data.value = await getVisualization();
-  console.log('%c Line:58 🥒 data.value', 'color:#465975', data.value);
-  console.log('%c Line:59 🥪 data.value', 'color:#7f2b82', data.value);
-  console.log('%c Line:60 🍌', 'color:#ed9ec7');
 };
 localData();
 
