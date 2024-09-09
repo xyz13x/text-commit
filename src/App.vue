@@ -47,7 +47,6 @@ import { getVisualization } from "./api/visualization.js";
 const data = ref(null);
 const localData = async () => {
   data.value = await getVisualization();
-  console.log("%c Line:45 🍯 data.value", "color:#f5ce50", data.value);
 };
 localData();
 
