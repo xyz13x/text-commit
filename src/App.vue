@@ -58,7 +58,7 @@ const localData = async () => {
 };
 localData();
 
-// 间隔三秒调用一次
+// 间隔三秒调用一次，实现动态更新
 setInterval(() => {
   localData();
 }, 3000);
